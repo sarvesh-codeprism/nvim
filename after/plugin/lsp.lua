@@ -7,9 +7,10 @@ lsp.ensure_installed({
     'eslint',
     'rust_analyzer',
     'pyright',
+    'lua_ls'
 })
 
-lsp.configure('sumneko_lua', {
+lsp.configure('lua_ls', {
     settings = {
         Lua = {
             diagnostics = {

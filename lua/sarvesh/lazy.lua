@@ -15,7 +15,7 @@ local plugins = {
 
     {
         'nvim-telescope/telescope.nvim',
-        tag = '0.1.0',
+        tag = '0.1.5',
         dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
 
@@ -56,7 +56,6 @@ local plugins = {
     },
     "folke/zen-mode.nvim",
     "github/copilot.vim",
-    "vimwiki/vimwiki",
     {
         'goolord/alpha-nvim',
         config = function()
@@ -86,14 +85,6 @@ local plugins = {
         config = function() require("nvim-autopairs").setup {} end
     },
     'brenoprata10/nvim-highlight-colors',
-    {
-        'phaazon/mind.nvim',
-        branch = 'v2.2',
-        dependencies = { 'nvim-lua/plenary.nvim' },
-        config = function()
-            require 'mind'.setup()
-        end
-    }
 }
 
 local opts = {}
